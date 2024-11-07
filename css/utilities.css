@@ -70,31 +70,32 @@
 }
 
 /* ?flex-columns */
+/* Estilo base para a galeria */
 .flex-columns .row {
    display: flex;
-   flex-direction: row;
    flex-wrap: wrap;
+   gap: 16px; /* Espaçamento entre as colunas */
    width: 100%;
 }
 
+/* Cada coluna (ajustes para telas pequenas) */
 .flex-columns .column {
    display: flex;
    flex-direction: column;
    flex-basis: 100%;
    flex: 1;
+   margin-bottom: 16px; /* Espaçamento inferior entre as colunas */
 }
 
-.flex-columns .column .column-1,
-.flex-columns .column .column-2 {
-   height: 100%;
-}
-
+/* Ajustando as imagens */
 .flex-columns img {
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
+   width: 100%; /* Imagem ocupa toda a largura da coluna */
+   height: auto; /* Mantém a proporção da imagem */
+   object-fit: cover; /* Cobre a área da coluna sem distorcer a imagem */
+   border-radius: 8px; /* Bordas arredondadas */
 }
 
+/* Ajustes para o texto na coluna-2 */
 .flex-columns .column-2 {
    display: flex;
    flex-direction: column;
@@ -104,13 +105,63 @@
    font-weight: 500;
 }
 
+/* Ajustando o título */
 .flex-columns h4 {
    padding-bottom: 10px;
 }
 
+/* Ajuste no tamanho do título principal */
 .flex-columns h2 {
    font-size: 40px;
    margin: 0 10px 0 0;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+   /* Em dispositivos móveis e tablets, a galeria se ajusta */
+   .flex-columns .column {
+       flex-basis: 100%; /* Cada imagem ocupa a linha inteira */
+   }
+
+   /* Centraliza as imagens e o texto, ajustando a altura para evitar rolagem */
+   .flex-columns .column-1,
+   .flex-columns .column-2 {
+       align-items: center; /* Alinha os itens ao centro */
+       justify-content: center; /* Centraliza o conteúdo */
+   }
+
+   /* Ajustando o título */
+   .flex-columns h2 {
+       font-size: 28px; /* Menor tamanho de fonte em telas pequenas */
+   }
+
+   .flex-columns h4 {
+       font-size: 18px; /* Ajustando o tamanho do subtítulo */
+   }
+
+   /* Ajuste nas imagens para que elas fiquem bem proporcionais em dispositivos móveis */
+   .responsive-image {
+       width: 100%;
+       height: auto; /* Mantém a proporção da imagem */
+   }
+
+   /* Ajusta a imagem e o texto no celular para evitar que o texto fique fora da tela */
+   .flex-columns {
+       display: block;
+       text-align: center; /* Garante que o conteúdo seja alinhado ao centro */
+       padding: 10px; /* Adiciona um pequeno padding para evitar que o conteúdo fique muito colado às bordas */
+   }
+}
+
+@media (max-width: 480px) {
+   /* Ajusta o layout em dispositivos móveis ainda menores */
+   .flex-columns h2 {
+       font-size: 24px; /* Tamanho de título menor */
+   }
+
+   .flex-columns .column-2 {
+       padding: 10px; /* Menos padding nas colunas em dispositivos menores */
+   }
 }
 
 .flex-columns .btn {
