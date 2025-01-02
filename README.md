@@ -23,7 +23,7 @@ Créditos: Eric Galvão.
 <table>
 <tr>
 
-<td align="center"><a href="https://github.com/EricAG09"><img src="https://github.com/eric.png" width="100px"><br><sub><b>Eric Galvão</b></sub></a><br></td>
+<td align="center"><a href="https://github.com/EricAG09"><img src="https://github.com/EricAG09.png" width="100px"><br><sub><b>Eric Galvão</b></sub></a><br></td>
 
 </tr>
 </table>
