@@ -22,13 +22,9 @@ Créditos: Eric Galvão.
 <!-- markdownlint-disable -->
 <table>
 <tr>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<td align="center"><a href="https://github.com/EricAG09"><img src="https://github.com/eric.png" width="100px"><br><sub><b>Eric Galvão</b></sub></a><br></td>
-=======
 
-<td align="center"><a href="https://github.com/EricAG09"><img src="https://github.com/eric.jpg" width="100px"><br><sub><b>Eric Galvão</b></sub></a><br></td>
->>>>>>> 3e86292899559e856316a18300e9796f6d393127
+<td align="center"><a href="https://github.com/EricAG09"><img src="https://github.com/eric.png" width="100px"><br><sub><b>Eric Galvão</b></sub></a><br></td>
+
 </tr>
 </table>
 
